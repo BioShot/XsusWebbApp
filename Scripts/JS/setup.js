@@ -35,7 +35,7 @@ const results = ""
             }else{
             setCookie('name',username)
             document.createElement('p').textContent = "Redirecting...";
-            setTimeout(document.location.assign('http://127.0.0.1:5500/Portal.html'),1000)
+            setTimeout(document.location.assign('Portal.html'),1000)
 }
 
 
