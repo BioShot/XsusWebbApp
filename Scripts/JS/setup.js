@@ -16,7 +16,9 @@ function getCookie(name) {
     }
     return "";
 }
-
+function exit() {
+    document.close()
+}
 function jojo(){
     var body = document.getElementById("body")
     body.style.backgroundImage = "url('/API/iframes/speedrun.gif')"
@@ -27,8 +29,16 @@ function jojo(){
     setCookie("name","_(JOJOSPEEDRUNRAINBOWTAGS)")
     document.title = "SUPERJOJOANDDWEAMREFRENCE__MC"
 }
+
+function accept(){
+    document.writeln("<div id='accept_div' style='content-align: center'>");
+    document.writeln("   <h1>Would you like to send this back to Vouge(Trusted)?</h1><br>");
+    document.writeln("   <button id='Yes'>Yes.</button>");
+    document.writeln("   <button id='No'>No.</button>");
+    document.writeln("</div>");
+}
 const results = ""
-        new URLSearchParams(window.location.search).forEach((username) => {
+        new URLSearchParams(window.location.search).forEach((username,program,launchpath) => {
            
             if(window.location.search == "?color=green;token=speedrun;color=rainbow;token=JOJO;keyword=Zaworldo"){
                 setTimeout(jojo,100)
