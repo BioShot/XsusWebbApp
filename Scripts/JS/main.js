@@ -23,12 +23,18 @@ function change_name(){
         const Name = getCookie("name");
         const page_header = document.getElementById("header")
         page_header.textContent = 'Welome '+ Name +'!'
+        swal.fire({
+            icon:"success"
+        })
     }else{
     const page_header = document.getElementById("header")
     const Name = prompt("Name: ")    
     page_header.textContent = 'Welome '+ Name +'!'
     console.log(Name)
     setCookie("name",Name)
+    swal.fire({
+        icon:"success"
+    })
   }
 }
 
